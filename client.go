@@ -8,8 +8,8 @@ import (
 	"os"
 	"slices"
 
-	"github.com/stainless-sdks/stnlss_test-go/internal/requestconfig"
-	"github.com/stainless-sdks/stnlss_test-go/option"
+	"github.com/SomeTestOrg/stnlss_test-go/internal/requestconfig"
+	"github.com/SomeTestOrg/stnlss_test-go/option"
 )
 
 // Client creates a struct with services and top level methods that help with

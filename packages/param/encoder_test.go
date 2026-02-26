@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/stnlss_test-go/packages/param"
+	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
 )
 
 type Struct struct {

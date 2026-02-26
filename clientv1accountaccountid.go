@@ -3,7 +3,7 @@
 package stnlsstest
 
 import (
-	"github.com/stainless-sdks/stnlss_test-go/option"
+	"github.com/SomeTestOrg/stnlss_test-go/option"
 )
 
 // ClientV1AccountAccountIDService contains methods and other services that help
