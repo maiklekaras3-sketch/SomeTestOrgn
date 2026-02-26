@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/packages/param"
 )
 
 var encoders sync.Map // map[encoderEntry]encoderFunc

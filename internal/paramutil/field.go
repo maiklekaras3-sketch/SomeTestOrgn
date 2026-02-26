@@ -1,8 +1,8 @@
 package paramutil
 
 import (
-	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
-	"github.com/SomeTestOrg/stnlss_test-go/packages/respjson"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/packages/param"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/packages/respjson"
 )
 
 func AddrIfPresent[T comparable](v param.Opt[T]) *T {

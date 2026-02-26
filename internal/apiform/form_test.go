@@ -2,7 +2,7 @@ package apiform
 
 import (
 	"bytes"
-	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/packages/param"
 	"io"
 	"mime/multipart"
 	"strings"

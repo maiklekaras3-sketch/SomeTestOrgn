@@ -10,10 +10,10 @@ import (
 	"net/url"
 	"slices"
 
-	"github.com/SomeTestOrg/stnlss_test-go/internal/apijson"
-	"github.com/SomeTestOrg/stnlss_test-go/internal/requestconfig"
-	"github.com/SomeTestOrg/stnlss_test-go/option"
-	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/internal/apijson"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/internal/requestconfig"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/option"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/packages/param"
 )
 
 // ClientV1CdnUserService contains methods and other services that help with

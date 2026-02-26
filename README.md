@@ -2,7 +2,7 @@
 
 <!-- x-release-please-start-version -->
 
-<a href="https://pkg.go.dev/github.com/SomeTestOrg/stnlss_test-go"><img src="https://pkg.go.dev/badge/github.com/SomeTestOrg/stnlss_test-go.svg" alt="Go Reference"></a>
+<a href="https://pkg.go.dev/github.com/maiklekaras3-sketch/SomeTestOrgn"><img src="https://pkg.go.dev/badge/github.com/maiklekaras3-sketch/SomeTestOrgn.svg" alt="Go Reference"></a>
 
 <!-- x-release-please-end -->
 
@@ -17,7 +17,7 @@ It is generated with [Stainless](https://www.stainless.com/).
 
 ```go
 import (
-	"github.com/SomeTestOrg/stnlss_test-go" // imported as stnlsstest
+	"github.com/maiklekaras3-sketch/SomeTestOrgn" // imported as stnlsstest
 )
 ```
 
@@ -28,7 +28,7 @@ Or to pin the version:
 <!-- x-release-please-start-version -->
 
 ```sh
-go get -u 'github.com/SomeTestOrg/stnlss_test-go@v0.0.1'
+go get -u 'github.com/maiklekaras3-sketch/SomeTestOrgn@v0.0.1'
 ```
 
 <!-- x-release-please-end -->
@@ -48,8 +48,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/SomeTestOrg/stnlss_test-go"
-	"github.com/SomeTestOrg/stnlss_test-go/option"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/option"
 )
 
 func main() {
@@ -284,7 +284,7 @@ client.Client.V1.Accounts.AccountID.Firewall.AccessRules.New(context.TODO(), ...
 
 The request option `option.WithDebugLog(nil)` may be helpful while debugging.
 
-See the [full list of request options](https://pkg.go.dev/github.com/SomeTestOrg/stnlss_test-go/option).
+See the [full list of request options](https://pkg.go.dev/github.com/maiklekaras3-sketch/SomeTestOrgn/option).
 
 ### Pagination
 
@@ -522,7 +522,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/SomeTestOrg/stnlss_test-go/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/maiklekaras3-sketch/SomeTestOrgn/issues) with questions, bugs, or suggestions.
 
 ## Contributing
 

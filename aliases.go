@@ -3,8 +3,8 @@
 package stnlsstest
 
 import (
-	"github.com/SomeTestOrg/stnlss_test-go/internal/apierror"
-	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/internal/apierror"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/packages/param"
 )
 
 // aliased to make [param.APIUnion] private when embedding
