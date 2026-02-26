@@ -2,7 +2,7 @@ package apijson
 
 import (
 	"errors"
-	"github.com/stainless-sdks/stnlss_test-go/packages/param"
+	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
 	"reflect"
 
 	"github.com/tidwall/gjson"

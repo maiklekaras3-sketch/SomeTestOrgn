@@ -9,12 +9,12 @@ import (
 	"net/url"
 	"slices"
 
-	"github.com/stainless-sdks/stnlss_test-go/internal/apijson"
-	"github.com/stainless-sdks/stnlss_test-go/internal/apiquery"
-	"github.com/stainless-sdks/stnlss_test-go/internal/requestconfig"
-	"github.com/stainless-sdks/stnlss_test-go/option"
-	"github.com/stainless-sdks/stnlss_test-go/packages/param"
-	"github.com/stainless-sdks/stnlss_test-go/packages/respjson"
+	"github.com/SomeTestOrg/stnlss_test-go/internal/apijson"
+	"github.com/SomeTestOrg/stnlss_test-go/internal/apiquery"
+	"github.com/SomeTestOrg/stnlss_test-go/internal/requestconfig"
+	"github.com/SomeTestOrg/stnlss_test-go/option"
+	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
+	"github.com/SomeTestOrg/stnlss_test-go/packages/respjson"
 )
 
 // ClientV1ZoneService contains methods and other services that help with

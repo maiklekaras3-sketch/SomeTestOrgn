@@ -1,7 +1,7 @@
 package apijson
 
 import (
-	"github.com/stainless-sdks/stnlss_test-go/packages/respjson"
+	"github.com/SomeTestOrg/stnlss_test-go/packages/respjson"
 	"reflect"
 )
 
