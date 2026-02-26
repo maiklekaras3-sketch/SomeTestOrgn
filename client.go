@@ -8,8 +8,8 @@ import (
 	"os"
 	"slices"
 
-	"github.com/SomeTestOrg/stnlss_test-go/internal/requestconfig"
-	"github.com/SomeTestOrg/stnlss_test-go/option"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/internal/requestconfig"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/option"
 )
 
 // Client creates a struct with services and top level methods that help with

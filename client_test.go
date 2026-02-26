@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SomeTestOrg/stnlss_test-go"
-	"github.com/SomeTestOrg/stnlss_test-go/internal"
-	"github.com/SomeTestOrg/stnlss_test-go/option"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/internal"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/option"
 )
 
 type closureTransport struct {

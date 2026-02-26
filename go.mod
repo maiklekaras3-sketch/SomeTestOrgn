@@ -1,4 +1,4 @@
-module github.com/SomeTestOrg/stnlss_test-go
+module github.com/maiklekaras3-sketch/SomeTestOrgn
 
 go 1.22
 

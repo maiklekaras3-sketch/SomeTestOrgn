@@ -3,7 +3,7 @@
 package stnlsstest
 
 import (
-	"github.com/SomeTestOrg/stnlss_test-go/option"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/option"
 )
 
 // ClientV1AccountAccountIDFirewallService contains methods and other services that

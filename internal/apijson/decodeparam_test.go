@@ -3,8 +3,8 @@ package apijson_test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/SomeTestOrg/stnlss_test-go/internal/apijson"
-	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/internal/apijson"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/packages/param"
 	"reflect"
 	"testing"
 )

@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/SomeTestOrg/stnlss_test-go"
-	"github.com/SomeTestOrg/stnlss_test-go/internal/testutil"
-	"github.com/SomeTestOrg/stnlss_test-go/option"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/internal/testutil"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/option"
 )
 
 func TestUsage(t *testing.T) {

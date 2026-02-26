@@ -1,8 +1,8 @@
 package sentinel_test
 
 import (
-	"github.com/SomeTestOrg/stnlss_test-go/internal/encoding/json/sentinel"
-	"github.com/SomeTestOrg/stnlss_test-go/packages/param"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/internal/encoding/json/sentinel"
+	"github.com/maiklekaras3-sketch/SomeTestOrgn/packages/param"
 	"reflect"
 	"slices"
 	"testing"
