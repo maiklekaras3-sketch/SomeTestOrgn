@@ -45,7 +45,7 @@ func (r *ClientV1ZoneZoneIDSubscriptionService) New(ctx context.Context, params 
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId/subscription"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 // Lists zone subscription details.
@@ -59,7 +59,7 @@ func (r *ClientV1ZoneZoneIDSubscriptionService) Get(ctx context.Context, query C
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId/subscription"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 // Updates zone subscriptions, either plan or add-ons.
@@ -73,7 +73,7 @@ func (r *ClientV1ZoneZoneIDSubscriptionService) Update(ctx context.Context, para
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId/subscription"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPut, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 type BaseAPIResponse struct {

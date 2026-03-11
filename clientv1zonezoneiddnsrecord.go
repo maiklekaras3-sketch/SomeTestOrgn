@@ -47,7 +47,7 @@ func (r *ClientV1ZoneZoneIDDNSRecordService) List(ctx context.Context, params Cl
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId/dns_records"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 // Send a Batch of DNS Record API calls to be executed together.
@@ -61,7 +61,7 @@ func (r *ClientV1ZoneZoneIDDNSRecordService) Batch(ctx context.Context, params C
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId/dns_records/batch"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 type ZoneDNSRecord struct {
