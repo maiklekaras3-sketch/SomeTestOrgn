@@ -46,7 +46,7 @@ func (r *ClientV1AccountAccountIDFirewallAccessRuleService) New(ctx context.Cont
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/accounts/:accountID/firewall/access_rules/rules"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 type ClientV1AccountAccountIDFirewallAccessRuleNewParams struct {

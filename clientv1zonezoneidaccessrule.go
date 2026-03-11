@@ -45,7 +45,7 @@ func (r *ClientV1ZoneZoneIDAccessRuleService) New(ctx context.Context, params Cl
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId/access_rules"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 type ClientV1ZoneZoneIDAccessRuleNewParams struct {

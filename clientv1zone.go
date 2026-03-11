@@ -49,7 +49,7 @@ func (r *ClientV1ZoneService) New(ctx context.Context, params ClientV1ZoneNewPar
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 // Lists, searches, sorts, and filters your zones. Listing zones across more than
@@ -64,7 +64,7 @@ func (r *ClientV1ZoneService) List(ctx context.Context, params ClientV1ZoneListP
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 type ResponseInfo struct {
