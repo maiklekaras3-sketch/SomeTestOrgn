@@ -38,7 +38,7 @@ func TestUserAgentHeader(t *testing.T) {
 			},
 		}),
 	)
-	client.Client.V1.Accounts.AccountID.Firewall.AccessRules.New(context.Background(), stnlsstest.ClientV1AccountAccountIDFirewallAccessRuleNewParams{
+	_, _ = client.Client.V1.Accounts.AccountID.Firewall.AccessRules.New(context.Background(), stnlsstest.ClientV1AccountAccountIDFirewallAccessRuleNewParams{
 		Configuration: stnlsstest.ClientV1AccountAccountIDFirewallAccessRuleNewParamsConfiguration{
 			Target: "ip",
 			Value:  "value",
