@@ -46,7 +46,7 @@ func (r *ClientV1ZoneZoneIDSettingSettingIDService) Get(ctx context.Context, que
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId/settings/:settingId"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 // Updates a single zone setting by the identifier
@@ -60,7 +60,7 @@ func (r *ClientV1ZoneZoneIDSettingSettingIDService) Update(ctx context.Context, 
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId/settings/:settingId"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPatch, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 type ZoneSettingAPIResponse struct {

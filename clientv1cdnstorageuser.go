@@ -45,11 +45,11 @@ func (r *ClientV1CdnStorageUserService) Get(ctx context.Context, storageID strin
 	opts = slices.Concat(r.Options, opts)
 	if storageID == "" {
 		err = errors.New("missing required storage_id parameter")
-		return
+		return nil, err
 	}
 	path := fmt.Sprintf("client/v1/cdn/storage/%s/user", url.PathEscape(storageID))
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 type ClientV1CdnStorageUserGetParams struct {

@@ -49,7 +49,7 @@ func (r *ClientV1CdnStorageService) New(ctx context.Context, params ClientV1CdnS
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/cdn/storage"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 // Provide full list of CDN storages which is accessible for you.
@@ -63,7 +63,7 @@ func (r *ClientV1CdnStorageService) List(ctx context.Context, query ClientV1CdnS
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/cdn/storage"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 // Delete your CDN storage.
@@ -78,11 +78,11 @@ func (r *ClientV1CdnStorageService) Delete(ctx context.Context, storageID string
 	opts = append([]option.RequestOption{option.WithHeader("Accept", "*/*")}, opts...)
 	if storageID == "" {
 		err = errors.New("missing required storage_id parameter")
-		return
+		return err
 	}
 	path := fmt.Sprintf("client/v1/cdn/storage/%s", url.PathEscape(storageID))
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodDelete, path, nil, nil, opts...)
-	return
+	return err
 }
 
 // Refresh CDN storage from remote server.
@@ -97,11 +97,11 @@ func (r *ClientV1CdnStorageService) Refresh(ctx context.Context, storageID strin
 	opts = append([]option.RequestOption{option.WithHeader("Accept", "*/*")}, opts...)
 	if storageID == "" {
 		err = errors.New("missing required storage_id parameter")
-		return
+		return err
 	}
 	path := fmt.Sprintf("client/v1/cdn/storage/%s/refresh", url.PathEscape(storageID))
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, nil, nil, opts...)
-	return
+	return err
 }
 
 type CdnStorageResponse struct {

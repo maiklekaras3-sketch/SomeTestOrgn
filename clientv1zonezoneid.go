@@ -53,7 +53,7 @@ func (r *ClientV1ZoneZoneIDService) Get(ctx context.Context, query ClientV1ZoneZ
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 // Deletes an existing zone.
@@ -67,7 +67,7 @@ func (r *ClientV1ZoneZoneIDService) Delete(ctx context.Context, body ClientV1Zon
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/zones/:zoneId"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodDelete, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 type ClientV1ZoneZoneIDDeleteResponse struct {

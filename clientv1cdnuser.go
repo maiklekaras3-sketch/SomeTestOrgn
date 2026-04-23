@@ -46,7 +46,7 @@ func (r *ClientV1CdnUserService) New(ctx context.Context, params ClientV1CdnUser
 	opts = slices.Concat(r.Options, opts)
 	path := "client/v1/cdn/user"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, params, &res, opts...)
-	return
+	return res, err
 }
 
 // Revoke old sftp credentials and simultaneously provides new credentials.
@@ -60,11 +60,11 @@ func (r *ClientV1CdnUserService) Revoke(ctx context.Context, username string, bo
 	opts = slices.Concat(r.Options, opts)
 	if username == "" {
 		err = errors.New("missing required username parameter")
-		return
+		return nil, err
 	}
 	path := fmt.Sprintf("client/v1/cdn/user/%s/revoke", url.PathEscape(username))
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPut, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 type ClientV1CdnUserNewParams struct {
